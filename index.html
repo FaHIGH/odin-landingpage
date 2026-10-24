@@ -1,28 +1,82 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Landingpage</title>
-            <link rel="stylesheet" href="styles.css" />
-        </head>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landingpage</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
     <body>
         <header>
-            <div clas="logo">
-                <h1 class="header_logo">Header logo</h1>
-            </div>
             <nav>
-                <ul  class="header-nav">
-                    <li><a href="links/links1.html">header link one</a></li>
-                    <li><a href="links/links2.html">header link two</a></li>
-                    <li><a href="links/links3.html">header link three</a></li>
+                <div class="header-logo">Header Logo</div>
+                <ul class="links">
+                    <li>
+                        <a href="#">header link one</a>
+                    </li>
+                    <li>
+                        <a href="#">header link two</a>
+                    </li>
+                    <li>
+                        <a href="#">header link three</a>
+                    </li>
                 </ul>
-                <main class="header_content">
-                   <h3>This web is awesome</h3> 
-                   <div>This websiite has some subtext that goes here under the main title. it's a smaller font and the color is lower contrast</div>
-                   <button class="header_button">sign up</button>
-                   <img alt="This is a placeholder for an image">
-                </main>
             </nav>
-        </header>        
+            <div class="hero">
+                <div class="hero-text">
+                    <h1 id="hero-header">this website is awesome</h1>
+                    <p>this website has some subtext that goes here under the main title.
+                        it's a smaller font and the color is lower contrast.
+                    </p>
+                    <button class="button-hero">sign up</button>   
+                </div>
+                <div class="pic-hero"><p>This is a placeholder for an image</p></div>
+            </div>
+        </header>
+        <main>
+            <section class="info">
+                <h2>Some random information.</h2>
+                <div class="info-cards">
+                    <div class="card-content">
+                        <div class="card-border"></div>
+                        <p>this is some subtext under an illustration or image</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-border"></div>
+                        <p>this is some subtext under an illustration or image</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-border"></div>
+                        <p>this is some subtext under an illustration or image</p>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-border"></div>
+                        <p>this is some subtext under an illustration or image</p>
+                    </div>
+                </div>
+            </section>
+            <div class="quote">
+                <div class="quote-box">
+                    <div>This is an inspiring quote, or testimonial from a customer
+                        . Maybe it's just filling up space, or maybe people will actually read it
+                        . Who knows? All I know is that it looks nice.
+                    </div>
+                    <div class="quote-speaker">-Thor, God of Thunder</div>
+                </div>
+            </div>
+            <section class="cta">
+                <div class="cta-content">
+                    <h2 id="cta-text">Call to action! It's time!</h2>
+                    <p>sign up for our product by clicking that button right over there!</p>                   
+                </div>
+                <button>sign up</button>
+            </section>
+        </main>
+        <footer>
+            Copyright © The Odin Project 2021
+        </footer>
     </body>
+</html>
